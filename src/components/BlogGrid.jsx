@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const blogPosts = [
   {
@@ -8,7 +9,7 @@ const blogPosts = [
     readTime: '5 min read',
     title: 'Risk Management: The Foundation of Consistent Trading',
     description: 'Essential risk management principles every trader needs to master for long-term success.',
-    link: '#',
+    content: 'Full article content here...', // Add full content for each post
   },
   {
     id: 2,
@@ -17,7 +18,7 @@ const blogPosts = [
     readTime: '5 min read',
     title: 'Risk Management: The Foundation of Consistent Trading',
     description: 'Essential risk management principles every trader needs to master for long-term success.',
-    link: '#',
+    content: 'Full article content here...',
   },
   {
     id: 3,
@@ -26,7 +27,7 @@ const blogPosts = [
     readTime: '5 min read',
     title: 'Risk Management: The Foundation of Consistent Trading',
     description: 'Essential risk management principles every trader needs to master for long-term success.',
-    link: '#',
+    content: 'Full article content here...',
   },
   {
     id: 4,
@@ -35,7 +36,7 @@ const blogPosts = [
     readTime: '5 min read',
     title: 'Risk Management: The Foundation of Consistent Trading',
     description: 'Essential risk management principles every trader needs to master for long-term success.',
-    link: '#',
+    content: 'Full article content here...',
   },
   {
     id: 5,
@@ -44,7 +45,7 @@ const blogPosts = [
     readTime: '5 min read',
     title: 'Risk Management: The Foundation of Consistent Trading',
     description: 'Essential risk management principles every trader needs to master for long-term success.',
-    link: '#',
+    content: 'Full article content here...',
   },
   {
     id: 6,
@@ -53,7 +54,7 @@ const blogPosts = [
     readTime: '5 min read',
     title: 'Risk Management: The Foundation of Consistent Trading',
     description: 'Essential risk management principles every trader needs to master for long-term success.',
-    link: '#',
+    content: 'Full article content here...',
   },
 ];
 
@@ -67,11 +68,8 @@ const BlogGrid = () => (
       # Smart trading, sharp management—mastering markets with clarity and control.
     </p>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      {blogPosts.map((post, idx) => (
-        <div
-          key={post.id}
-          className='bg-white rounded-lg shadow-md overflow-hidden border transition-all duration-200'
-        >
+      {blogPosts.map((post) => (
+        <div key={post.id} className="bg-white rounded-lg shadow-md overflow-hidden border transition-all duration-200">
           <img src={post.image} alt="Blog" className="w-full h-48 object-cover" />
           <div className="p-5">
             <div className="text-gray-500 text-sm mb-2">
@@ -79,9 +77,9 @@ const BlogGrid = () => (
             </div>
             <h3 className="font-bold text-lg mb-2">{post.title}</h3>
             <p className="text-gray-700 mb-4">{post.description}</p>
-            <a href={post.link} className="text-green-700 font-semibold hover:underline flex items-center">
+            <Link to={`/blog/${post.id}`} className="text-green-700 font-semibold hover:underline flex items-center">
               Read More <span className="ml-1">→</span>
-            </a>
+            </Link>
           </div>
         </div>
       ))}
