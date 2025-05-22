@@ -11,6 +11,8 @@ import Success from './components/Success';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import BlogGrid from './components/BlogGrid';
+import Analysis from './components/Analysis';
 
 function App() {
   return (
@@ -23,9 +25,12 @@ function App() {
       <Recap />
       <What />
       <Blog />
+     
       <Success />
       <FAQ />
-      <Contact />
+       <BlogGrid />
+       <Analysis/>
+       <Contact />
       <Footer />
     </div>
   );
