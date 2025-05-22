@@ -3,7 +3,7 @@ import React from 'react';
 const blogPosts = [
   {
     id: 1,
-    image: '/blog-image.png', // Place your image in public/ or use a URL
+    image: 'https://www.shutterstock.com/image-vector/business-candle-stick-graph-chart-260nw-2470698987.jpg', // Place your image in public/ or use a URL
     date: 'May 7, 2025',
     readTime: '5 min read',
     title: 'Risk Management: The Foundation of Consistent Trading',
@@ -12,7 +12,7 @@ const blogPosts = [
   },
   {
     id: 2,
-    image: '/blog-image.png',
+    image: 'https://www.shutterstock.com/image-vector/business-candle-stick-graph-chart-260nw-2470698987.jpg',
     date: 'May 7, 2025',
     readTime: '5 min read',
     title: 'Risk Management: The Foundation of Consistent Trading',
@@ -21,7 +21,7 @@ const blogPosts = [
   },
   {
     id: 3,
-    image: '/blog-image.png',
+    image: 'https://www.shutterstock.com/image-vector/business-candle-stick-graph-chart-260nw-2470698987.jpg',
     date: 'May 7, 2025',
     readTime: '5 min read',
     title: 'Risk Management: The Foundation of Consistent Trading',
@@ -30,7 +30,7 @@ const blogPosts = [
   },
   {
     id: 4,
-    image: '/blog-image.png',
+    image: 'https://www.shutterstock.com/image-vector/business-candle-stick-graph-chart-260nw-2470698987.jpg',
     date: 'May 7, 2025',
     readTime: '5 min read',
     title: 'Risk Management: The Foundation of Consistent Trading',
@@ -39,7 +39,7 @@ const blogPosts = [
   },
   {
     id: 5,
-    image: '/blog-image.png',
+    image: 'https://www.shutterstock.com/image-vector/business-candle-stick-graph-chart-260nw-2470698987.jpg',
     date: 'May 7, 2025',
     readTime: '5 min read',
     title: 'Risk Management: The Foundation of Consistent Trading',
@@ -48,7 +48,7 @@ const blogPosts = [
   },
   {
     id: 6,
-    image: '/blog-image.png',
+    image: 'https://www.shutterstock.com/image-vector/business-candle-stick-graph-chart-260nw-2470698987.jpg',
     date: 'May 7, 2025',
     readTime: '5 min read',
     title: 'Risk Management: The Foundation of Consistent Trading',
