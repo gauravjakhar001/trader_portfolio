@@ -32,6 +32,7 @@ function App() {
               <What />
               <Blog />
               <BlogGrid />
+              <Analysis />
               <Success />
               <FAQ />
               <Contact />
